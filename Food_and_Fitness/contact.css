@@ -1,0 +1,140 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Abel;
+    src: url(Abel-Regular.ttf);
+}
+@font-face {
+    font-family: Oswald;
+    src: url(Oswald-Bold.ttf);
+}
+
+a{
+    color:black;
+}
+a:hover{
+    color:orange;
+}
+
+.h1{
+    color:black; 
+} 
+
+@keyframes rightToLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+.scroll{
+     
+    font-family:Oswald;
+    font-size: 50px;
+    /* background: -webkit-linear-gradient(rgb(11, 4, 4),rgb(11, 11, 11));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold; */
+    animation-name: rightToLeft;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+#row4{
+
+    font-family:Oswald;
+    margin-left: 250px;
+}
+
+#row5{
+    
+    display:flex;
+    flex-direction:column;
+    font-family: Abel;
+    align-items:left;
+    margin-left: 250px;
+    font-size: 30px;
+}
+
+.fb{
+    color: #068df5;
+    font-size: 25px;
+}
+.in{
+    color: var(#fccc63,#fbad50,#cd486b,#e95950,#bc2a8d,#8a3ab9, #4c68d7,45deg);
+    font-size: 25px;
+}
+.tw{
+    color:rgb(0, 110, 255);
+    font-size: 25px;
+}
+.em{
+    color:rgb(215, 109, 109);
+    font-size: 25px;
+}
+.wh{
+    color:green;
+    font-size: 25px;
+}
+
+.fa-instagram 
+  {
+    color: rgb(255, 0, 0);
+  }
+
+a
+ { 
+    color: #0b001c;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+    border:orange;
+    border-radius: 10px;
+}
+a:hover
+{
+    
+    color: rgb(246, 117, 11);
+    letter-spacing: 0.1em;
+    box-shadow: 0 0 35px #0c0c0c;
+}
+
+.row2{
+
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    font-family: Oswald;
+    
+  }
+
+  .fab,.fa-brands,.fa-solid
+  {
+    font-size:50px;
+  }
+  
+
+#a1{
+
+    margin-left: 20px;
+    color: #068df5;
+
+}
+#a1:hover{
+    border:1.5px solid rgb(158, 63, 127);
+    color:#bc2a8d;
+    background-color:rgb(0, 0, 0);
+}

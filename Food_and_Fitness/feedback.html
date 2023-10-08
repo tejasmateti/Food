@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="feedback.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title> Feedback Form </title>
+    <script src="https://kit.fontawesome.com/ee4aaaa2e4.js" crossorigin="anonymous"></script>
+</head>
+<style type="text/css">
+    #slider {
+     overflow : hidden;
+    }
+    #slider figure{
+        position:relative;
+        width:500%;
+        margin:0;
+        left:0;
+        animation: 15s slider ease-in;
+    
+    }
+    #slider figure img{
+        float: center;
+        width:8%;
+        height:50hv;
+    }
+    @keyframes slider{
+        0%
+        {
+            left:0%;
+        }
+        25%
+        {
+            left:-100%;
+        }
+        50%
+        {
+            left:-200%;
+        }
+        75%
+        {
+            left:-350%;
+        }
+        100%
+        {
+            left:-500;
+        }
+        
+    }
+    .responsive
+    {
+        width:100%;
+        height:auto;
+    }
+    </style>
+<body class="bg" background=" color-2174049.png ">
+    <div class="row1"> 
+        <h1 class="scroll">FOOD AND FITNESS BLOG</h1>
+       
+        <div class="row2" align="center">
+            <a href="home.html" id="a1">HOME</a>
+            <a href="about.html" id="a1">ABOUT</a>
+            <a href="fitness.html" id="a1">FITNESS</a>
+            <a href="diet.html" id="a1">DIET</a>
+            <a href="special.html" id="a1">SPECIAL EVENTS</a>
+            <a href="side.html" id="a1">SIDE EFFECTS</a>
+            <a href="feedback.html" id="a1">FEEDBACK & SUGGESTIONS</a>
+            <a href="contact.html" id="a1">CONTACT</a>
+
+        </div> 
+        <div><hr size="5" color="black"></div>
+        
+    <div class="container py-5 one">
+        <div class="row">
+            <div class="col-lg-5 col-md-8 mx-auto shadow border bg-white p-4 rounded">
+                <h2 class="text-center fw-bold mb-3">Feedback Form</h2>
+                <form name="google-sheet">
+                    <div id="form_alerts"></div>
+                    <div class="form-group mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Enter your Full name" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email" class="form-label">Email Id</label>
+                        <input type="text" id="email" name="email" class="form-control" placeholder="Enter your email id" required>
+                    </div>
+                         <div class="form-group mb-3">
+                            <label for="message" class="form-label">Feedback</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Enter your feedback" rows="5" required></textarea>
+                        </div>
+                    <div>
+                        <div class="form-group mb-3">
+                            <label for="rating " class="form-label">Rating</label>
+                            <input type="text" id="rating" name="rating" class="form-control" placeholder="Enter the rating out of 5" required>
+                        </div>
+                    <div class="form-group" style="text-align: right;"> 
+                        <button class="btn btn-primary me-2" type="submit" style="background-color: rgb(36, 91, 219); margin:10px;text-decoration-color: black;">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container py-5 two">
+        <div class="row">
+            <div class="col-lg-5 col-md-8 mx-auto shadow border bg-white p-4 rounded">
+                <h2 class="text-center fw-bold mb-3">Registration Form</h2>
+                <form name="google-sheet-2">
+                    <div id="form_alerts"></div>
+                    <div class="form-group mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Enter your Full name" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email" class="form-label">Email Id</label>
+                        <input type="text" id="email" name="email" class="form-control" placeholder="Enter your email id" required>
+                    </div>
+                         <div class="form-group mb-3">
+                            <label for="message" class="form-label">Physical Training</label>
+                            <input type="text" id="message" name="message" class="form-control" placeholder="Enter your choice" rows="5" required>
+                            <br><h6>1-Yoga; 2-Gym; 3-Self-Defence; 4-Zumba</h6>
+                            <!-- <input type="checkbox" id="Yoga">Yoga<br>
+                            <input type="checkbox" id="Gym">Gym<br>
+                            <input type="checkbox" id="Self-Defence">Self-Defence<br>
+                            <input type="checkbox" id="Zumba">Zumba<br> -->
+                        </div>
+                    <div class="form-group" style="text-align: right;"> 
+                        <button class="btn btn-primary me-2" type="submit" style="background-color: aqua; margin:10px;text-decoration-color: black;">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script>
+        const scriptURL1 ="https://script.google.com/macros/s/AKfycbx5_POWDXa6AEv1Bav0FxL7xWmwtTKU1myQk3C8wwoWJSQF-Z3jq1oJ2QsVZizKRUje/exec"
+        const form1 = document.forms['google-sheet-2']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL1, { method: 'POST', body: new FormData(form1)})
+            .then(response => $("#form_alerts").html("<div class='alert alert-success'>Contact message sent successfully.</div>"))
+            .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Contact message not sent.</div>"))
+        })
+    </script>
+   
+               
+        <section id="section2">
+            <div id="slider">
+                <marquee>
+                    <figure>
+                   
+                    <img id="img9" src="./gym3.jfif" />
+                    <img id="img9" src="./gym4.jpg"/>
+                   <img id="img9" src="./gym5.jpg"/>
+                    <img id="img9" src="./gym7.jpg" />
+                    <img id="img9" src="./gym1.jfif" />
+                    <img id="img9" src="./gym3.jfif" />
+                    <img id="img9" src="./gym4.jpg"/>
+                   <img id="img9" src="./gym5.jpg"/>
+                    <img id="img9" src="./gym7.jpg" />
+                    <img id="img9" src="./gym1.jfif" />
+                    </figure>
+                </marquee>
+                
+                </div>
+           
+        </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"> </script>
+    <script>
+        const scriptURL ="https://script.google.com/macros/s/AKfycbwzfjJhKk4WBt2ak-5b1YkB0zXmaR8ca7jHlFG2dQpkh8SNUB837f6_UdPS17C1ZKTV-w/exec"
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => $("#form_alerts").html("<div class='alert alert-success'>Contact message sent successfully.</div>"))
+            .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Contact message not sent.</div>"))
+        })
+    </script> 
+    <br>
+    <br>
+    <div class="last">
+       <button class="btn-1"><strong><a href="feedback.html" id="a1"><i class="fa-solid fa-arrow-up-from-bracket"></i></a></strong></button>
+    </div>
+</body>
+</html>

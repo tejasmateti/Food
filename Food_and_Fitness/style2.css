@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Oswald',sans-serif;
+}
+h2
+{
+  font-size: 25px;
+}
+
+.row1{
+    
+    width: 100%; 
+    float: left;
+} 
+
+.h1{
+    color:black; 
+    font-size: bold; 
+    text-align: center;
+}
+
+a
+{
+    position: relative;
+    background: transparent;
+    color: #0b001c;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+    border: none;
+    border-radius:10px;
+}
+a:hover
+{
+    background: transparent;
+    color: rgb(246, 117, 11);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px #0c0c0c;
+    border: 20%;
+}
+a:before
+{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: transparent;
+}
+
+.scroll{
+     
+    font-family: 'Oswald',sans-serif;
+    font-size: 50px;
+    background: -webkit-linear-gradient(rgb(11, 4, 4),rgb(11, 11, 11));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    animation-name: rightToLeft;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin-bottom: 40px;
+}
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.white-line
+{
+  margin-top: 170px;
+}
+
+.main{
+        font-family: Oswald;
+        font-size: 40px;
+        background: -webkit-linear-gradient(#0c0c0c,rgb(9, 0, 0));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-bottom: 0px;
+    
+}
+#img{
+  float: right;
+}
+#buttonrow
+{
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+.row3 {
+
+    background-color:lightcoral;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 70px;
+
+}
+
+.imgsrc{
+    margin-left: 100px;
+    border-radius: 10px;
+    transition: 4s;
+} 
+
+  #about3{  
+    text-align: center;
+    color: black;
+    font-size: 27px;
+    justify-content: center;
+    margin-left: 50px;
+    width: 60%;
+
+}
+#about3-2{ 
+  color: black;
+  justify-content: right;
+  margin-right: 50px; 
+  float: right;
+  width: 40%;
+
+}
+
+.para-1
+{
+  margin-top: 100px;
+  
+}
+.para-2
+{
+  margin-top: 100px;
+}
+.para-3
+{
+  margin-top: 100px;
+}
+.imgsrc:hover
+{
+  transform: rotateY(360deg);
+}
